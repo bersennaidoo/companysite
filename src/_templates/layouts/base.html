@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <title>Temple Site</title>
-</head>
-<body>
-    <header class="site-header">
-        <nav>
-            <ul>
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    {{ content }}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/w3pro.css" />
+    <link rel="stylesheet" href="/assets/css/temple-primary.css" />
+    <link rel="stylesheet" href="/assets/css/temple-secondary.css" />
+    <link rel="stylesheet" href="/assets/css/system-colors.css" />
+    <title>{{ title }}</title>
+  </head>
+  <body class="w3-container w3-padding">
+    {% include "components/header.html" %} {{ content }} {% include
+    "components/footer.html" %}
 
-    <footer class="footer">
-        <p>&copy; Copyright 2024</p>
-    </footer>
-</body>
+    <script src="/assets/js/w3.js"></script>
+    <script src="/assets/js/dropnav.js"></script>
+  </body>
 </html>
