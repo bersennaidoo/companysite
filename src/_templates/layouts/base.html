@@ -11,9 +11,11 @@
     <title>{{ title }}</title>
   </head>
   <body>
-    <div class="w3-containerg w3-primary">
-      <img src="/assets/images/templelogoxcf.png" width="298" height="48" />
-    </div>
+    <header>
+      {% include "../components/navbar.html" %}
+
+      {% include "../components/hero.html" %}
+    </header>
     {{ content }}
     <script src="/assets/js/w3.js"></script>
   </body>
